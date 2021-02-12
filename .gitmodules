@@ -1,0 +1,3 @@
+[submodule "The_Force"]
+	path = The_Force
+	url = git@github.com:sh4dersp4ce/The_Force.git
