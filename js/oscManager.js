@@ -153,6 +153,8 @@ function enableOSCMessage(whom)
 
     var listener = osc.on(m, function(cMessage) 
 	{
+        console.log(cMessage);
+        
         if (cMessage.typesString == "ffff") {
             //check if popup is visible
             if ($('#oscPanel').length)//onscreen

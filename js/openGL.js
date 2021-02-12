@@ -315,8 +315,9 @@ function createOSCUniforms() {
 
         if (inp !== null) {
             // mOSCStr += "uniform vec4 " + $('#inOSCUniform'+i).val() + ";\n";
-            // mOSCStr += "uniform vec4 " + oscM[i].uniName + ";\n";
-            mOSCStr = "uniform vec4 analogInput;";
+            mOSCStr += "uniform vec4 " + oscM[i].uniName + ";\n";
+            console.log(mOSCStr);
+            // mOSCStr = "uniform vec4 analogInput;";
         }
     }
 }
