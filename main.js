@@ -2,7 +2,7 @@ const OSC = require("osc-js")
 
 const udp_osc = new OSC({
     plugin: new OSC.DatagramPlugin({
-        open: {port: 9129},
+        open: {port: 9129, host: "0.0.0.0"},
         send: {port: 9128}
     })
 });
@@ -10,6 +10,7 @@ let udp_sender = null;
 
 const ws_osc = new OSC({
     plugin: new OSC.WebsocketServerPlugin({
+        host: "0.0.0.0",
         port: 8000
     })
 });
